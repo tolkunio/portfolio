@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Icon} from 'src/components/icon/Icon';
+import {Icon} from '../../../../components/icon/Icon';
 type WorkPropsType={
     iconId:string
     src:string,
@@ -8,16 +8,23 @@ type WorkPropsType={
 }
 export const Work = (props:WorkPropsType) => {
     return (
-        <div>
-            <Icon></Icon>
-            <Title></Title>
+        <StyledWork >
+            <Icon iconId={props.iconId} />
+            <Title>{props.title}</Title>
             <Image src={props.src} alt={''}/>
-        </div>
+        </StyledWork>
     );
 };
+
+const StyledWork = styled.div`
+  max-width: 540px;
+  width: 100%;
+`
 const Title = styled.h3`
     
 `
 const Image= styled.img`
-    
+    width: 100%;
+    height: 164px;
+  object-fit: cover;
 `
