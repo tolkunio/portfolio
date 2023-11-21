@@ -2,9 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import photo from '../../../assets/images/heroImg.png'
 import {FlexWrapper} from '../../../components/FlexWrapper';
+
 export const Main = () => {
     return (
-        <div>
+        <StyledMain>
             <FlexWrapper align={'center'} justify={'space-around'}>
                 <div>
                     <span>Hi !</span>
@@ -19,9 +20,13 @@ export const Main = () => {
                 <Photo src={photo} alt=""></Photo>
             </FlexWrapper>
 
-        </div>
+        </StyledMain>
     );
 };
+const StyledMain = styled.div`
+  padding: 60px 0;
+  margin: 20px;
+`
 const Photo = styled.img`
   width: 250px;
   height: 220px;
