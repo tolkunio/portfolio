@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container } from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {SectionTitle} from '../../../components/SectionTitle';
 import {Skill} from '../../sections//skills/skill/Skill';
@@ -7,37 +8,90 @@ import {Skill} from '../../sections//skills/skill/Skill';
 export const Skills = () => {
     return (
         <StyledSkills>
-            <SectionTitle>Skills</SectionTitle>
-            <FlexWrapper align={'center'} justify={'space-evenly'} wrap={'wrap'}>
-                <Skill
-                    iconId={'react'}
-                    iconHeight={'50'}
-                    iconWidth={'50'}
-                    viewBox={'0 0 50 50'}
-                    skillTitle={'React'}/>
-                <Skill
-                    iconId={'css3'}
-                    iconHeight={'53'}
-                    iconWidth={'53'}
-                    viewBox={'0 0 53 53'}
-                    skillTitle={'CSS3'}/>
-                <Skill
-                    iconId={'html5'}
-                    iconHeight={'44'}
-                    iconWidth={'44'}
-                    viewBox={'0 0 44 44'}
-                    skillTitle={'HTML 5'}/>
-                <Skill
-                    iconId={'ts'}
-                    iconHeight={'50'}
-                    iconWidth={'50'}
-                    viewBox={'0 0 50 50'}
-                    skillTitle={'Typescript'}/>
-            </FlexWrapper>
+            <Container>
+                <SectionTitle>Skills</SectionTitle>
+                <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
+                    <Skill
+                        iconId={'javascript'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'JS'}/>
+                    <Skill
+                        iconId={'typescript'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'TS'}/>
+                    <Skill
+                        iconId={'reactjs'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'React'}/>
+                    <Skill
+                        iconId={'redux'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'Redux'}/>
+                    <Skill
+                        iconId={'html5'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 30 30'}
+                        skillTitle={'HTML 5'}/>
+                    <Skill
+                        iconId={'css3'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 50 50'}
+                        skillTitle={'CSS3'}/>
+                    <Skill
+                        iconId={'styledComponents'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'Styled Components'}/>
+                    <Skill
+                        iconId={'material-ui'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 -26 256 256'}
+                        skillTitle={'Material UI'}/>
+                    <Skill
+                        iconId={'node-js'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 32 32'}
+                        skillTitle={'Node JS'}/>
+                    <Skill
+                        iconId={'postgrest'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 120 120'}
+                        skillTitle={'postgresql'}/>
+                    <Skill
+                        iconId={'rest'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 20 20'}
+                        skillTitle={'rest api'}/>
+                    <Skill
+                        iconId={'git'}
+                        iconHeight={'120'}
+                        iconWidth={'120'}
+                        viewBox={'0 0 32 32'}
+                        skillTitle={'Git'}/>
+
+
+                </FlexWrapper>
+            </Container>
         </StyledSkills>
     );
 };
 
 const StyledSkills = styled.section`
-    min-height: 80vh;
+    min-height: 120vh;
+    display: flex;
 `
