@@ -28,7 +28,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.div`
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
 `
 const ProfileInfo = styled.div`

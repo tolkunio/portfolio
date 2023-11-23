@@ -5,7 +5,7 @@ import {Container} from "../../components/Container";
 import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 
-const items = ['Home', 'About', 'Skills', 'Works', 'Contacts']
+const items = ['Home', 'About', 'Skills', 'Works', 'Contact Me']
 export const Header = () => {
     return (
         <StyledHeader>
