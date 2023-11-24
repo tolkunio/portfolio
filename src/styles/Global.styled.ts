@@ -23,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+    color: ${theme.colors.fontColorSecond};
   }
 
   ul {
@@ -44,4 +45,14 @@ export const GlobalStyle = createGlobalStyle`
     background-color: ${theme.colors.accent};
   }
   
+  h3{
+    color: ${theme.colors.baseFontColor};
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  p{
+   font-weight: 400;
+   font-size: 14px; 
+  }
 `

@@ -25,11 +25,7 @@ const StyledSkill = styled.div`
   padding: 10px 0;
 `
 const SkillTitle = styled.h3`
-  color: var(--text, #1F2626);
   text-align: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
   letter-spacing: 2.166px;
   text-transform: uppercase;
 `
