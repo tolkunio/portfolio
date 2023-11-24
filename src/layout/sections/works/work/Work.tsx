@@ -13,13 +13,17 @@ export const Work = ({iconId, src, title, text}: WorkPropsType) => {
     return (
         <StyledWork>
             <Icon iconId={iconId}/>
-            <Title>{title}</Title>
             <Image src={src} alt={''}/>
-            <StyledParagh>
-                {text}
-            </StyledParagh>
-            <Link href={'#'}>demo</Link>
-            <Link href={'#'}>code</Link>
+            <Description>
+                <Title>{title}</Title>
+                <StyledParagh>
+                    {text}
+                </StyledParagh>
+                <Link href={'#'}>demo</Link>
+                <Link href={'#'}>code</Link>
+            </Description>
+
+
         </StyledWork>
     );
 };
@@ -28,14 +32,19 @@ const StyledWork = styled.div`
   max-width: 540px;
   width: 100%;
 `
+const Description = styled.div`
+    padding: 25px 20px;
+`
 const Title = styled.h3`
-
+  text-align: left;
 `
 const Image = styled.img`
   width: 100%;
-  height: 164px;
+  height: 200px;
   object-fit: cover;
 `
-const StyledParagh=styled.p`
-    
+const StyledParagh = styled.p`
+  text-align: left;
+  margin: 14px 0 10px;
+
 `

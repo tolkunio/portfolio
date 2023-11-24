@@ -16,7 +16,7 @@ export const TabMenu = (props: { menuItems: string[] }) => {
     );
 };
 const StyledTabMenu = styled.nav`
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   ul {
     display: flex;
     gap: 20px;
