@@ -17,7 +17,7 @@ export const Works = () => {
             <Container>
                 <SectionTitle>My Works</SectionTitle>
                 <TabMenu menuItems={works}/>
-                <FlexWrapper justify={'space-between'}>
+                <FlexWrapper justify={'space-between'} align={'flex-start'}>
                     <Work iconId={''}
                           src={sendpay}
                           title={'SendPay'}

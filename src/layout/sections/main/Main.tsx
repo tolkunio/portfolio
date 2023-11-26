@@ -43,12 +43,6 @@ const Greeting = styled.div`
   font-weight: 400;
   letter-spacing: 0.175px;
   
-  &::before{
-    width: 141px;
-    height: 131px;
-    background-color: rgba(14, 133, 243, 0.22);
-    filter: blur(32.5px);
-  }
 `
 const Name = styled.span`
   padding: 10px 0;
