@@ -12,8 +12,9 @@ type WorkPropsType = {
 export const Work = ({iconId, src, title, text}: WorkPropsType) => {
     return (
         <StyledWork>
-            <Icon iconId={iconId}/>
-            <Image src={src} alt={''}/>
+            <ImageWrapper>
+                <Image src={src} alt={''}/>
+            </ImageWrapper>
             <Description>
                 <Title>{title}</Title>
                 <StyledParagh>
@@ -27,13 +28,31 @@ export const Work = ({iconId, src, title, text}: WorkPropsType) => {
         </StyledWork>
     );
 };
+const ImageWrapper = styled.div`
+  position: relative;
+
+  &:hover {
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.30);
+      backdrop-filter: blur(4px);
+    }
+  }
+
+
+`
 
 const StyledWork = styled.div`
   max-width: 540px;
   width: 100%;
 `
 const Description = styled.div`
-    padding: 25px 20px;
+  padding: 25px 20px;
 `
 const Title = styled.h3`
   text-align: left;

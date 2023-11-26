@@ -4,6 +4,7 @@ import {SectionTitle} from '../../../components/SectionTitle'
 import {Contact} from '../contacts/contact/Contact';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
+import {Button} from "../../../components/Button";
 
 export const Contacts = () => {
     return (
@@ -16,6 +17,7 @@ export const Contacts = () => {
                     <Contact link={'Email'} iconId={'communication/message'}/>
                     <Contact link={'Telp'} iconId={'communication/call'}/>
                 </FlexWrapper>
+                <Button>Send Message</Button>
             </Container>
         </StyledContacts>
     );

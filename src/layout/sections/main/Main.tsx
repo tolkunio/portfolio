@@ -4,6 +4,7 @@ import photo from '../../../assets/images/heroImg.png'
 import {Container} from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {theme} from "../../../styles/Theme";
+import {Icon} from "../../../components/icon/Icon";
 
 export const Main = () => {
     return (
@@ -41,6 +42,13 @@ const Greeting = styled.div`
   font-size: 35px;
   font-weight: 400;
   letter-spacing: 0.175px;
+  
+  &::before{
+    width: 141px;
+    height: 131px;
+    background-color: rgba(14, 133, 243, 0.22);
+    filter: blur(32.5px);
+  }
 `
 const Name = styled.span`
   padding: 10px 0;

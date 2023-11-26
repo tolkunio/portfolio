@@ -56,4 +56,9 @@ export const GlobalStyle = createGlobalStyle`
    font-size: 14px; 
     line-height: 1.4;
   }
+  button{
+    cursor: pointer;
+    color: ${theme.colors.fontColorSecond};
+    outline: 1px solid;
+  }
 `
