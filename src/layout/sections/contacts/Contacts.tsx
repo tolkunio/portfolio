@@ -4,7 +4,6 @@ import {SectionTitle} from '../../../components/SectionTitle'
 import {Contact} from '../contacts/contact/Contact';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import { Container } from '../../../components/Container';
-import {Button} from "../../../components/Button";
 
 export const Contacts = () => {
     return (
@@ -17,12 +16,11 @@ export const Contacts = () => {
                     <Contact link={'Email'} iconId={'email'} viewBox={'0 0 24 24'}/>
                     <Contact link={'Telp'} iconId={'telephone'} viewBox={'0 0 24 24'}/>
                 </FlexWrapper>
-                <Button>Send Message</Button>
             </Container>
         </StyledContacts>
     );
 };
 
 const StyledContacts = styled.section`
-  min-height: 80vh;
+
 `
