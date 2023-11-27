@@ -8,7 +8,7 @@ export const Testimony = () => {
         <StyledTestimony>
             <Container>
                 <FlexWrapper justify={'space-between'}>
-                    
+
                 </FlexWrapper>
             </Container>
 
