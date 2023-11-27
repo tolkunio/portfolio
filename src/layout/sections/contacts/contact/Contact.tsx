@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Icon} from '../../../../components/icon/Icon';
 type ContactPropsType ={
     iconId:string,
+    viewBox:string,
     link:string
 }
 export const Contact = (props:ContactPropsType) => {
@@ -11,7 +12,7 @@ export const Contact = (props:ContactPropsType) => {
             <SocialList>
                 <SocialItem>
                     <SocialLink>
-                        <Icon iconId={props.iconId}/>
+                        <Icon iconId={props.iconId} viewBox={props.viewBox}/>
                     </SocialLink>
                 </SocialItem>
             </SocialList>

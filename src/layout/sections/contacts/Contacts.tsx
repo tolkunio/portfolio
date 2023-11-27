@@ -12,10 +12,10 @@ export const Contacts = () => {
             <Container>
                 <SectionTitle>Contact Me</SectionTitle>
                 <FlexWrapper justify={'space-around'}>
-                    <Contact link={'Github'} iconId={'github'}/>
-                    <Contact link={'Instagram'} iconId={'instagram'}/>
-                    <Contact link={'Email'} iconId={'communication/message'}/>
-                    <Contact link={'Telp'} iconId={'communication/call'}/>
+                    <Contact link={'Github'} iconId={'github2'} viewBox={'0 0 20 20'}/>
+                    <Contact link={'Linkedin'} iconId={'linkedin'} viewBox={'0 0 32 32'}/>
+                    <Contact link={'Email'} iconId={'email'} viewBox={'0 0 24 24'}/>
+                    <Contact link={'Telp'} iconId={'telephone'} viewBox={'0 0 24 24'}/>
                 </FlexWrapper>
                 <Button>Send Message</Button>
             </Container>
