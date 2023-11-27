@@ -2,12 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import {Icon} from '../../../../components/icon/Icon';
 import {theme} from "../../../../styles/Theme";
-type ContactPropsType ={
-    iconId:string,
-    viewBox:string,
-    link:string
+
+type ContactPropsType = {
+    iconId: string,
+    viewBox: string,
+    link: string
 }
-export const Contact = (props:ContactPropsType) => {
+export const Contact = (props: ContactPropsType) => {
     return (
         <StyledContact>
             <SocialList>
@@ -21,19 +22,22 @@ export const Contact = (props:ContactPropsType) => {
         </StyledContact>
     );
 };
-const StyledContact= styled.div`
+const StyledContact = styled.div`
 
 `
-const SocialList=styled.ul`
-    
+const SocialList = styled.ul`
+
 `
 const SocialItem = styled.li`
-    
+
 `
-const SocialLink= styled.a`
- background-color: rgba(255,255,255,0.1);
- border-radius: 50%;
- color:${theme.colors.fontColorSecond} 
+const SocialLink = styled.a`
+  color:${theme.colors.fontColorSecond}
+  
+  &:hover {
+    color:${theme.colors.baseFontColor}
+    transform: translateY(-4px);
+  }
 `
 const LinkTitle = styled.h4`
   color: #3F3D56;
@@ -42,4 +46,5 @@ const LinkTitle = styled.h4`
   font-weight: 500;
   line-height: normal;
   letter-spacing: 1.925px;
+
 `

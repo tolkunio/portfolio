@@ -15,7 +15,7 @@ export const Works = () => {
     return (
         <StyledWorks>
             <Container>
-                <SectionTitle>My Works</SectionTitle>
+                <SectionTitle>Works</SectionTitle>
                 <TabMenu menuItems={works}/>
                 <FlexWrapper justify={'space-between'} align={'flex-start'}>
                     <Work iconId={''}
