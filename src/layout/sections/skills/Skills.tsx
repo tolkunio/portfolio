@@ -4,12 +4,14 @@ import {Container} from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {SectionTitle} from '../../../components/SectionTitle';
 import {Skill} from '../../sections//skills/skill/Skill';
+import {theme} from "../../../styles/Theme";
 
 export const Skills = () => {
     return (
         <StyledSkills>
             <Container>
-                <SectionTitle>Skills</SectionTitle>
+                <SectionTitle>My Tech Stack</SectionTitle>
+                <SectionDescription>Technologies I’ve been working with recently</SectionDescription>
                 <FlexWrapper align={'center'} justify={'space-between'} wrap={'wrap'}>
                     <Skill
                         iconId={'javascript'}
@@ -70,4 +72,12 @@ export const Skills = () => {
 const StyledSkills = styled.section`
   display: flex;
   margin-bottom: 50px;
+`
+const SectionDescription = styled.h2`
+  color: ${theme.colors.sectionDescFontColor};
+  text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 20px;
 `

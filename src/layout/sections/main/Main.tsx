@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import photo from '../../../assets/images/heroImg.png'
 import {Container} from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import {theme} from "../../../styles/Theme";
 import {Icon} from "../../../components/icon/Icon";
+import profilePhoto from '../../../assets/images/portfolio.png'
 
 export const Main = () => {
     return (
@@ -12,16 +12,12 @@ export const Main = () => {
             <Container>
                 <FlexWrapper align={'center'} justify={'space-between'}>
                     <ProfileInfo>
-                        <Greeting>Hi !</Greeting>
-                        <Name>I'm Tolkun Omurbekova</Name>
-                        <Position>a Front-End Developer</Position>
-                        <Description>
-                            Front-End developer based in Bishkek, Kyrgyzstan <br/>
-                            I’m coding with a clean and beautiful problem <br/>
-                            solving in mind.
-                        </Description>
+                        <Greeting>Hi👋!</Greeting>
+                        <Greeting>My name is</Greeting>
+                        <Name>Tolkun O</Name>
+                        <Position>I build things for web</Position>
                     </ProfileInfo>
-                    <Photo src={photo} alt=""></Photo>
+                    <Photo src={profilePhoto} alt=""></Photo>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -36,20 +32,22 @@ const ProfileInfo = styled.div`
   padding: 0 40px;
   text-align: left;
 `
-const Greeting = styled.div`
-  padding: 10px 0;
-  color: ${theme.colors.fontColorSecond};
-  font-size: 35px;
-  font-weight: 400;
-  letter-spacing: 0.175px;
-  
-`
-const Name = styled.span`
+const Greeting= styled.div`
   padding: 10px 0;
   color: ${theme.colors.fontColorSecond};
   font-size: 50px;
   font-weight: 600;
   letter-spacing: 0.25px;
+`
+const Name = styled.span`
+  background: var(--Gradient-Heading, linear-gradient(90deg, #13B0F5 -2.06%, #E70FAA 100%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: -1px;
+
 `
 const Position = styled.h1`
   padding: 10px 0;
@@ -58,17 +56,13 @@ const Position = styled.h1`
   font-weight: 600;
   letter-spacing: 0.25px;
 `
-const Description = styled.span`
-  padding: 20px 0;
-  color: #082032;
-  font-size: 23px;
-  font-weight: 400;
-  letter-spacing: 0.345px;
-  word-wrap: break-word;
-`
 
 const Photo = styled.img`
-  width: 250px;
-  height: 220px;
-  object-fit: cover;
+  width: 349px;
+  height: 349px;
+  flex-shrink: 0;
+  border-radius: 230px;
+  border: 9px solid #E70FAA;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  
 `

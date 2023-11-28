@@ -4,20 +4,22 @@ import {Header} from '../src/layout/header/Header'
 import {Main} from '../src/layout/sections/main/Main';
 import {Skills} from '../src/layout/sections/skills/Skills';
 import {Works} from '../src/layout/sections/works/Works';
-import {Contacts} from '../src/layout/sections/contacts/Contacts';
+import {ContactMe} from './layout/sections/contactMe/ContactMe';
 import {Footer} from '../src/layout/footer/Footer';
+import {AboutMe} from "./layout/sections/aboutMe/AboutMe";
 
 function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <Main/>
-      <Skills/>
-      <Works/>
-      <Contacts/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <Main/>
+            <AboutMe/>
+            <Skills/>
+            <Works/>
+            <ContactMe/>
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
