@@ -34,24 +34,17 @@ export const Footer = () => {
 const StyledFooter = styled.footer`
   padding: 40px 0;
 `
-const StyledContact = styled.div`
-
-`
 const SocialList = styled.ul`
   display: flex;
   gap: 30px;
   margin-bottom: 10px;
 `
 const SocialItem = styled.li`
-
-`
-const SocialLink = styled.a`
-
-  color:${theme.colors.fontColorSecond}
   &:hover {
-    color: ${theme.colors.baseFontColor}
     transform: translateY(-4px);
   }
+`
+const SocialLink = styled.a`
 `
 const CopyRight = styled.small`
   text-align: center;

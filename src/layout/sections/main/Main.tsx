@@ -58,11 +58,7 @@ const Position = styled.h1`
 `
 
 const Photo = styled.img`
-  width: 349px;
-  height: 349px;
+  width: 350px;
+  height: 350px;
   flex-shrink: 0;
-  border-radius: 230px;
-  border: 9px solid #E70FAA;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-  
 `
