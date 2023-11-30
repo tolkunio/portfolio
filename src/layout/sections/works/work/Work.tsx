@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {Icon} from '../../../../components/icon/Icon';
 import {Link} from "../../../../components/Link";
 import {Button} from "../../../../components/Button";
+import {theme} from "../../../../styles/Theme";
 
 type WorkPropsType = {
     iconId: string
@@ -25,8 +26,6 @@ export const Work = ({iconId, src, title, text}: WorkPropsType) => {
                 <Link href={'#'}>demo</Link>
                 <Link href={'#'}>code</Link>
             </Description>
-
-
         </StyledWork>
     );
 };
@@ -49,6 +48,7 @@ const ImageWrapper = styled.div`
       opacity: 1;
     }
   }
+
   ${Button} {
     color: white;
     opacity: 0;
@@ -57,13 +57,10 @@ const ImageWrapper = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
   }
-
-
 `
 
 const StyledWork = styled.div`
-  max-width: 540px;
-  width: 100%;
+  width: calc(100% / 3 - 20px);
 `
 const Description = styled.div`
   padding: 25px 20px;

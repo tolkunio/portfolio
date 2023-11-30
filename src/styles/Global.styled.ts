@@ -1,5 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 import {theme} from "./Theme";
+import {font} from "./Common";
 
 export const GlobalStyle = createGlobalStyle`
   *,
@@ -50,14 +51,10 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   h3{
-    color: ${theme.colors.baseFontColor};
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
+    ${font({family: 'Montserrat', color: '${theme.colors.baseFontColor}',weight: 400, fmax: 16, fmin: 10})};
   }
   p{
-   font-weight: 400;
-   font-size: 14px; 
+    ${font({family: 'Poppins', weight: 400, fmax: 14, fmin: 10})};
     line-height: 1.4;
   }
   button{
