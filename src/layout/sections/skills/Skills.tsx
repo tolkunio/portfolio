@@ -5,6 +5,7 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {SectionTitle} from '../../../components/SectionTitle';
 import {Skill} from '../../sections//skills/skill/Skill';
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
 
 export const Skills = () => {
     return (
@@ -74,10 +75,8 @@ const StyledSkills = styled.section`
   margin-bottom: 50px;
 `
 const SectionDescription = styled.h2`
-  color: ${theme.colors.sectionDescFontColor};
+  ${font({family:'Montserrat', color: `${theme.colors.sectionDescFontColor}`,weight:400,fmax:20,fmin:16})};
   text-align: center;
-  font-size: 20px;
-  font-weight: 400;
   line-height: 26px;
   margin-bottom: 20px;
 `

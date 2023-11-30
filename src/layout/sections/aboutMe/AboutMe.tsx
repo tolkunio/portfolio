@@ -2,6 +2,9 @@ import React from 'react';
 import styled from "styled-components";
 import {Container} from '../../../components/Container';
 import {WorkExperience} from "./WorkExperience/WorkExperience";
+import {font} from "../../../styles/Common";
+import {theme} from "../../../styles/Theme";
+import {SectionTitle} from "../../../components/SectionTitle";
 
 type Experience = {
     Title: string,
@@ -39,7 +42,7 @@ export const AboutMe = () => {
         <StyledSection>
             <Container>
                 <AboutMeBlock>
-                    <BlockTitle>About Me</BlockTitle>
+                    <SectionTitle>About Me</SectionTitle>
                     <Description>
                         Front-end developer with more than 1 years of commercial experience, creating responsive
                         and user-friendly web applications using JS/ES6+,Typescript, React, Redux Toolkit,
@@ -63,7 +66,8 @@ export const AboutMe = () => {
                     <EducationBlock>
                         <BlockTitle>Education</BlockTitle>
                         <WorkExperience workTitle={'Bachelor’s degree, Computer Software Engineering'}
-                                        workTime={'Full Time'} companyName={'Kyrgyzskij Rossijskij-Slavjanskij Universitet'}
+                                        workTime={'Full Time'}
+                                        companyName={'Kyrgyzskij Rossijskij-Slavjanskij Universitet'}
                                         workPeriod={'2013- 2017\n'}/>
                     </EducationBlock>
 
@@ -77,12 +81,10 @@ const StyledSection = styled.section`
 
 `
 const BlockTitle = styled.h2`
-  color: #42446E;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 52px; /* 123.81% */
+  ${font({family: 'Poppins', color: `${theme.colors.baseBlack}`, weight: 700, fmax: 30, fmin: 16})};
   letter-spacing: -0.4px;
   margin-bottom: 15px;
+ 
 `
 const AboutMeBlock = styled.div`
   max-width: 900px;
@@ -93,10 +95,11 @@ const AboutMeBlock = styled.div`
 const Description = styled.p`
   margin-top: 20px;
   margin-bottom: 20px;
-  color: var(--dark-content, #666);
-  font-size: 18px;
-  font-weight: 400;
+  ${font({family: 'Poppins', color: '#666', weight: 400, fmax: 18, fmin: 15})};
   line-height: 26px; /* 144.444% */
+  @media ${theme.media.mobile}{
+    text-align: center;
+  }
 `
 const WorkExperienceBlock = styled.div`
 
