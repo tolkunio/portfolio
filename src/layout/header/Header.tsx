@@ -6,7 +6,16 @@ import {FlexWrapper} from "../../components/FlexWrapper";
 import {HeaderMenu} from "./headerMenu/HeaderMenu";
 import {MobileMenu} from "./mobileMenu/MobileMenu";
 
-const items = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact']
+export type MenuType = {
+    title: string,
+    href: string
+}
+const items: MenuType[] = [
+    {title: 'Home', href: 'home'},
+    {title: 'About', href: 'about'},
+    {title: 'Tech Stack', href: 'tech'},
+    {title: 'Projects', href: 'projects'},
+    {title: 'Contact', href: 'contact'}]
 export const Header = () => {
     return (
         <StyledHeader>

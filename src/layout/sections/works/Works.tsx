@@ -13,7 +13,7 @@ import ecom from '../../../assets/images/e-commerce.png'
 const works = ['All', 'Landing Page', 'React', 'SPA']
 export const Works = () => {
     return (
-        <StyledWorks>
+        <StyledWorks id={'projects'}>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <TabMenu menuItems={works}/>

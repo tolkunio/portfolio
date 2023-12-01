@@ -1,14 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 import {theme} from "../../../styles/Theme";
+import {font} from "../../../styles/Common";
+import {MenuType} from "../Header";
+import {Link} from "react-scroll";
 
-export const HeaderMenu = (props: { menuItems: string[] }) => {
+export const HeaderMenu = (props: { menuItems: MenuType[] }) => {
     return (
         <StyledMenu>
             <ul>
                 {props.menuItems.map((el, id) => {
                     return <ListItem key={id}>
-                        <Link href={'#'}>{el}</Link>
+                        <NavLink
+                            activeClass="active"
+                            smooth={true}
+                            spy={true}
+                            to={el.href}>{el.title}</NavLink>
                     </ListItem>
                 })}
             </ul>
@@ -20,22 +27,29 @@ const StyledMenu = styled.nav`
     display: flex;
     gap: 30px
   }
-  @media ${theme.media.tablet}{
+
+  @media ${theme.media.tablet} {
     display: none;
   }
 `
 const ListItem = styled.li`
-  &:hover {
 
-    transform: translateY(-4px);
-  }
 `
-const Link = styled.a`
-  color: #212121;
+const NavLink = styled(Link)`
+  ${font({
+    family: 'Poppins',
+    color: `${theme.colors.sectionTitleFontColor}`,
+    weight: 400,
+    fmax: 25,
+    fmin: 16
+  })};
+
   text-align: center;
-  font-size: 20px;
-  font-weight: 400;
   letter-spacing: 1.375px;
 
+  &:hover, &.active {
+    color: black;
+    font-size: 28px;
+  }
 
 `

@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
 import styled, {css} from 'styled-components';
 import {theme} from "../../../styles/Theme";
+import {MenuType} from "../Header";
+import {Link} from "react-scroll";
 
-export const MobileMenu = (props: { menuItems: string[] }) => {
+export const MobileMenu = (props: { menuItems: MenuType[] }) => {
     const [menuIsOpen, setMenuIsOpen] = useState(false);
     const onBurgerBtnClick = () => {
         setMenuIsOpen(!menuIsOpen)
@@ -18,7 +20,11 @@ export const MobileMenu = (props: { menuItems: string[] }) => {
                 <ul>
                     {props.menuItems.map((el, id) => {
                         return <ListItem key={id}>
-                            <Link href={'#'}>{el}</Link>
+                            <NavLink
+                                activeClass="active"
+                                spy={true}
+                                smooth={true}
+                                to={el.href}>{el.title}</NavLink>
                         </ListItem>
                     })}
                 </ul>
@@ -46,7 +52,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
     display: block;
     width: 36px;
     height: 2px;
-    background-color: ${theme.colors.baseBlack};
+    background-color: ${theme.colors.sectionTitleFontColor};
     position: absolute;
     left: 40px;
     bottom: 50px;
@@ -60,7 +66,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 36px;
       height: 2px;
-      background-color: ${theme.colors.baseBlack};
+      background-color: ${theme.colors.sectionTitleFontColor};
       position: absolute;
       transform: translateY(-10px);
 
@@ -75,7 +81,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       display: block;
       width: 24px;
       height: 2px;
-      background-color: ${theme.colors.baseBlack};
+      background-color: ${theme.colors.sectionTitleFontColor};
       position: absolute;
       transform: translateY(10px);
 
@@ -86,7 +92,6 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       }
 `
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  border: 1px solid black;
   position: fixed;
   top: 0;
   left: 0;
@@ -123,12 +128,16 @@ const ListItem = styled.li`
     transform: translateY(-4px);
   }
 `
-const Link = styled.a`
+const NavLink = styled(Link)`
   color: #212121;
   text-align: center;
   font-size: 20px;
   font-weight: 400;
   letter-spacing: 1.375px;
-
+  
+  &:hover, &.active {
+    color: black;
+    font-size: 22px;
+  }
 
 `

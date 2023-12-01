@@ -5,7 +5,7 @@ import { Container } from '../../../components/Container';
 
 export const ContactMe = () => {
     return (
-        <StyledContacts>
+        <StyledContacts id={'contact'}>
             <Container>
                 <SectionTitle>For any questions please mail me:</SectionTitle>
                 <StyledEmail>toprog27@gmail.com</StyledEmail>

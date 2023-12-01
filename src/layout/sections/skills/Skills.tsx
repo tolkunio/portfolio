@@ -9,7 +9,7 @@ import {font} from "../../../styles/Common";
 
 export const Skills = () => {
     return (
-        <StyledSkills>
+        <StyledSkills id={'tech'}>
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionDescription>Technologies I’ve been working with recently</SectionDescription>

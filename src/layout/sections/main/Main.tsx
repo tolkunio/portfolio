@@ -6,20 +6,29 @@ import {theme} from "../../../styles/Theme";
 import profilePhoto from '../../../assets/images/portfolio.png'
 import {font} from "../../../styles/Common";
 import Tilt from 'react-parallax-tilt';
+import Typewriter from 'typewriter-effect';
 
 
 export const Main = () => {
     return (
-        <StyledMain>
+        <StyledMain id={'home'}>
             <Container>
                 <FlexWrapper align={'center'} justify={'space-around'} wrap={'wrap'}>
                     <ProfileInfo>
                         <Greeting>Hi👋!</Greeting>
                         <Greeting>My name is</Greeting>
                         <Name>Tolkun O</Name>
-                        <Position>I build things for web</Position>
+                        <Position>
+                            <Typewriter
+                                options={{
+                                    strings: ['I build things for web'],
+                                    autoStart: true,
+                                    loop: true,
+                                }}
+                            />
+                        </Position>
                     </ProfileInfo>
-                    <Tilt  glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
+                    <Tilt glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
                         <PhotoWrapper>
                             <Photo src={profilePhoto} alt=""></Photo>
                         </PhotoWrapper>
@@ -64,7 +73,7 @@ const Name = styled.span`
 const Position = styled.h1`
   padding: 10px 0;
   color: ${theme.colors.fontColorSecond};
-  ${font({family: 'Poppins', weight: 600, fmax: 50, fmin: 36})};
+  ${font({family: 'Poppins', color: `${theme.colors.fontColorSecond}`, weight: 600, fmax: 50, fmin: 36})};
   letter-spacing: 0.25px;
 `
 const PhotoWrapper = styled.div`

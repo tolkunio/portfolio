@@ -39,7 +39,7 @@ const experiences: Array<Experience> = [
 ]
 export const AboutMe = () => {
     return (
-        <StyledSection>
+        <StyledSection id={'about'}>
             <Container>
                 <AboutMeBlock>
                     <SectionTitle>About Me</SectionTitle>
@@ -72,7 +72,6 @@ export const AboutMe = () => {
                     </EducationBlock>
 
                 </AboutMeBlock>
-
             </Container>
         </StyledSection>
     );
@@ -81,7 +80,7 @@ const StyledSection = styled.section`
 
 `
 const BlockTitle = styled.h2`
-  ${font({family: 'Poppins', color: `${theme.colors.baseBlack}`, weight: 700, fmax: 30, fmin: 16})};
+  ${font({family: 'Poppins', color: '#42446E', weight: 700, fmax: 25, fmin: 16})};
   letter-spacing: -0.4px;
   margin-bottom: 15px;
  
