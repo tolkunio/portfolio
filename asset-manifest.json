@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-app/static/css/main.1d766016.css",
+    "main.js": "/my-portfolio-app/static/js/main.4b0fa48a.js",
+    "static/js/787.3c86a6c9.chunk.js": "/my-portfolio-app/static/js/787.3c86a6c9.chunk.js",
+    "static/media/portfolio.png": "/my-portfolio-app/static/media/portfolio.49694844a2da5eaa24c8.png",
+    "static/media/sprite.svg": "/my-portfolio-app/static/media/sprite.865d0c9d22bbc2a71560eee4cb22c09e.svg",
+    "static/media/e-commerce.png": "/my-portfolio-app/static/media/e-commerce.ccd52311e81d2683b85d.png",
+    "static/media/edtech.png": "/my-portfolio-app/static/media/edtech.55c088a9281243b85237.png",
+    "static/media/sendPay.png": "/my-portfolio-app/static/media/sendPay.486146b356b39e5de18e.png",
+    "static/media/location.svg": "/my-portfolio-app/static/media/location.e8e892a134db0521d75db78ccc06b672.svg",
+    "index.html": "/my-portfolio-app/index.html",
+    "static/media/office.svg": "/my-portfolio-app/static/media/office.e9b5378819105428f61d16f693a2f139.svg",
+    "main.1d766016.css.map": "/my-portfolio-app/static/css/main.1d766016.css.map",
+    "main.4b0fa48a.js.map": "/my-portfolio-app/static/js/main.4b0fa48a.js.map",
+    "787.3c86a6c9.chunk.js.map": "/my-portfolio-app/static/js/787.3c86a6c9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1d766016.css",
+    "static/js/main.4b0fa48a.js"
+  ]
+}
