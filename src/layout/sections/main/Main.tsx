@@ -5,6 +5,8 @@ import {FlexWrapper} from '../../../components/FlexWrapper';
 import {theme} from "../../../styles/Theme";
 import profilePhoto from '../../../assets/images/portfolio.png'
 import {font} from "../../../styles/Common";
+import Tilt from 'react-parallax-tilt';
+
 
 export const Main = () => {
     return (
@@ -17,10 +19,11 @@ export const Main = () => {
                         <Name>Tolkun O</Name>
                         <Position>I build things for web</Position>
                     </ProfileInfo>
-                    <PhotoWrapper>
-                        <Photo src={profilePhoto} alt=""></Photo>
-                    </PhotoWrapper>
-
+                    <Tilt  glareEnable={true} glareMaxOpacity={0.9} glareColor="lightblue" glarePosition="all">
+                        <PhotoWrapper>
+                            <Photo src={profilePhoto} alt=""></Photo>
+                        </PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </StyledMain>
@@ -30,7 +33,7 @@ export const Main = () => {
 const StyledMain = styled.section`
   min-height: 100vh;
   display: flex;
-  
+
   @media ${theme.media.mobile} {
     padding: 70px 0;
   }
