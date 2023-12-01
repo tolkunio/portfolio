@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Icon} from '../../../../components/icon/Icon';
 import {Link} from "../../../../components/Link";
 import {Button} from "../../../../components/Button";
-import {theme} from "../../../../styles/Theme";
 
 type WorkPropsType = {
     iconId: string
