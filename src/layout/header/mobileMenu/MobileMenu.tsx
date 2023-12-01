@@ -1,14 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styled, {css} from 'styled-components';
 import {theme} from "../../../styles/Theme";
 
 export const MobileMenu = (props: { menuItems: string[] }) => {
+    const [menuIsOpen, setMenuIsOpen] = useState(false);
+    const onBurgerBtnClick = () => {
+        setMenuIsOpen(!menuIsOpen)
+    }
     return (
         <StyledMobileMenu>
-            <BurgerButton isOpen={false}>
+            <BurgerButton isOpen={menuIsOpen} onClick={onBurgerBtnClick}>
                 <span></span>
             </BurgerButton>
-            <MobileMenuWrapper isOpen={false}>
+            <MobileMenuPopup isOpen={menuIsOpen} onClick={() => {
+                setMenuIsOpen(false)
+            }}>
                 <ul>
                     {props.menuItems.map((el, id) => {
                         return <ListItem key={id}>
@@ -16,7 +22,7 @@ export const MobileMenu = (props: { menuItems: string[] }) => {
                         </ListItem>
                     })}
                 </ul>
-            </MobileMenuWrapper>
+            </MobileMenuPopup>
 
         </StyledMobileMenu>
     );
@@ -63,6 +69,7 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       `
       }
     }
+
     &::after {
       content: '';
       display: block;
@@ -73,18 +80,20 @@ const BurgerButton = styled.button<{ isOpen: boolean }>`
       transform: translateY(10px);
 
       ${props => props.isOpen && css<{ isOpen: boolean }>`
-          transform: rotate(45deg) translateX(0);
-          width: 36px;
-        `
+        transform: rotate(45deg) translateX(0);
+        width: 36px;
+      `
       }
 `
-const MobileMenuWrapper = styled.div<{ isOpen: boolean }>`
+const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
+  border: 1px solid black;
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   bottom: 0;
   z-index: 99999;
-  background-color: whitesmoke;
+  background-color:rgba(0,0,0,0.9);
   display: none;
 
   ${props => props.isOpen && css<{ isOpen: boolean }>`
@@ -96,8 +105,15 @@ const MobileMenuWrapper = styled.div<{ isOpen: boolean }>`
   ul {
     display: flex;
     gap: 30px;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+  }
+  a{
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: normal;
   }
 `
 
