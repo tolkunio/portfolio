@@ -35,31 +35,31 @@ export const GlobalStyle = createGlobalStyle`
   button {
     background-color: unset;
     border: unset;
+    cursor: pointer;
+    color: ${theme.colors.fontColorSecond};
   }
-  section{
+
+  section {
     padding: 100px 0;
-    @media ${theme.media.mobile}{
+    @media ${theme.media.mobile} {
       padding: 40px 0;
     }
   }
-  section:nth-of-type(odd){
-    background-color:${theme.colors.primaryBg};
+
+  section:nth-of-type(odd) {
+    background-color: ${theme.colors.primaryBg};
   }
 
   section:nth-of-type(even) {
     background-color: ${theme.colors.accent};
   }
-  
-  h3{
-    ${font({family: 'Montserrat', color: '${theme.colors.baseFontColor}',weight: 400, fmax: 16, fmin: 10})};
+
+  h3 {
+    ${font({family: 'Montserrat', color: '${theme.colors.baseFontColor}', weight: 400, fmax: 16, fmin: 10})};
   }
-  p{
+
+  p {
     ${font({family: 'Poppins', weight: 400, fmax: 14, fmin: 10})};
     line-height: 1.4;
-  }
-  button{
-    cursor: pointer;
-    color: ${theme.colors.fontColorSecond};
-    outline: 1px solid;
   }
 `

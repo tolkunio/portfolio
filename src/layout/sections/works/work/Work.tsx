@@ -67,8 +67,9 @@ const Title = styled.h3`
   text-align: left;
 `
 const Image = styled.img`
+  min-height: 180px;
   width: 100%;
-  height: 200px;
+  min-height: 200px;
   object-fit: cover;
 `
 const StyledParagh = styled.p`
