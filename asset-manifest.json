@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/TaskOrganizedApp/static/css/main.1d766016.css",
-    "main.js": "/TaskOrganizedApp/static/js/main.ad8c796b.js",
-    "static/js/787.3c86a6c9.chunk.js": "/TaskOrganizedApp/static/js/787.3c86a6c9.chunk.js",
-    "static/media/portfolio.png": "/TaskOrganizedApp/static/media/portfolio.49694844a2da5eaa24c8.png",
-    "static/media/sprite.svg": "/TaskOrganizedApp/static/media/sprite.865d0c9d22bbc2a71560eee4cb22c09e.svg",
-    "static/media/e-commerce.png": "/TaskOrganizedApp/static/media/e-commerce.ccd52311e81d2683b85d.png",
-    "static/media/edtech.png": "/TaskOrganizedApp/static/media/edtech.55c088a9281243b85237.png",
-    "static/media/sendPay.png": "/TaskOrganizedApp/static/media/sendPay.486146b356b39e5de18e.png",
-    "static/media/location.svg": "/TaskOrganizedApp/static/media/location.e8e892a134db0521d75db78ccc06b672.svg",
-    "index.html": "/TaskOrganizedApp/index.html",
-    "static/media/office.svg": "/TaskOrganizedApp/static/media/office.e9b5378819105428f61d16f693a2f139.svg",
-    "main.1d766016.css.map": "/TaskOrganizedApp/static/css/main.1d766016.css.map",
-    "main.ad8c796b.js.map": "/TaskOrganizedApp/static/js/main.ad8c796b.js.map",
-    "787.3c86a6c9.chunk.js.map": "/TaskOrganizedApp/static/js/787.3c86a6c9.chunk.js.map"
+    "main.css": "/portfolio/static/css/main.1d766016.css",
+    "main.js": "/portfolio/static/js/main.546f7479.js",
+    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portfolio.png": "/portfolio/static/media/portfolio.49694844a2da5eaa24c8.png",
+    "static/media/sprite.svg": "/portfolio/static/media/sprite.865d0c9d22bbc2a71560eee4cb22c09e.svg",
+    "static/media/e-commerce.png": "/portfolio/static/media/e-commerce.ccd52311e81d2683b85d.png",
+    "static/media/edtech.png": "/portfolio/static/media/edtech.55c088a9281243b85237.png",
+    "static/media/sendPay.png": "/portfolio/static/media/sendPay.486146b356b39e5de18e.png",
+    "static/media/location.svg": "/portfolio/static/media/location.db01c212c5b07b6502b568d2c9adf64a.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/office.svg": "/portfolio/static/media/office.832aac186eb19c4024b1f0f78f19ca1d.svg",
+    "main.1d766016.css.map": "/portfolio/static/css/main.1d766016.css.map",
+    "main.546f7479.js.map": "/portfolio/static/js/main.546f7479.js.map",
+    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d766016.css",
-    "static/js/main.ad8c796b.js"
+    "static/js/main.546f7479.js"
   ]
 }
