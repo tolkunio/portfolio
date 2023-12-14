@@ -1,4 +1,4 @@
-[Demo](https://tolkunio.github.io/Portfolio/)
+[Demo](https://tolkunio.github.io/portfolio/)
 <p align="center">
 <img src="https://i.ibb.co/sW93fFR/Screenshot-2.png" alt="Screenshot-2" border="0">
 </p>
