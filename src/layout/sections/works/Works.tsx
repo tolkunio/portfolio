@@ -5,8 +5,9 @@ import {Container} from '../../../components/Container';
 import {TabMenu} from './tabmenu/TabMenu';
 import {Work} from './work/Work';
 import {FlexWrapper} from '../../../components/FlexWrapper';
-import sendpay from '../../../assets/images/sendPay.png'
-import edtech from '../../../assets/images/edtech.png'
+import beauty from '../../../assets/images/healthy-beaty.png'
+import todos from '../../../assets/images/todos.png'
+import ssn from '../../../assets/images/ssn.jpg'
 import ecom from '../../../assets/images/e-commerce.png'
 
 
@@ -19,17 +20,16 @@ export const Works = () => {
                 <TabMenu menuItems={works}/>
                 <FlexWrapper justify={'space-between'} align={'flex-start'} wrap={'wrap'}>
                     <Work iconId={''}
-                          src={sendpay}
-                          title={'SendPay'}
-                          text={`Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                 Assumenda at, autem beatae deleniti ea error eum illum ipsam ipsum`}/>
+                          src={todos}
+                          title={'Task Organized App'}
+                          text={`Task tracking app for manage tasks, projects and everything in between`}/>
                     <Work iconId={''}
-                          src={edtech}
-                          title={'EdTech'}
+                          src={beauty}
+                          title={'Healthy Beauty'}
                           text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
                     <Work iconId={''}
-                          src={ecom}
-                          title={'E-Commerce'}
+                          src={ssn}
+                          title={'Social network'}
                           text={'test wordk descriotion fjkshskjdfhskjdfh shshf'}/>
                 </FlexWrapper>
             </Container>
