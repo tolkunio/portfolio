@@ -9,7 +9,7 @@ type WorkPropsType = {
     title: string,
     text: string
 }
-export const Work = ({iconId, src, title, text}: WorkPropsType) => {
+export const Work = ({src, title, text}: WorkPropsType) => {
     return (
         <StyledWork>
             <ImageWrapper>
@@ -28,6 +28,7 @@ export const Work = ({iconId, src, title, text}: WorkPropsType) => {
     );
 };
 const ImageWrapper = styled.div`
+  min-height: 100px;
   position: relative;
 
   &:hover {
@@ -69,7 +70,6 @@ const Title = styled.h3`
 const Image = styled.img`
   min-height: 180px;
   width: 100%;
-  min-height: 200px;
   object-fit: cover;
 `
 const StyledParagh = styled.p`

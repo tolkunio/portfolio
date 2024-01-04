@@ -7,8 +7,7 @@ import {Work} from './work/Work';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 import beauty from '../../../assets/images/healthy-beaty.png'
 import todos from '../../../assets/images/todos.png'
-import ssn from '../../../assets/images/ssn.jpg'
-import ecom from '../../../assets/images/e-commerce.png'
+import diary from '../../../assets/images/diary.png';
 
 
 const works = ['All', 'Landing Page', 'React', 'SPA']
@@ -26,11 +25,11 @@ export const Works = () => {
                     <Work iconId={''}
                           src={beauty}
                           title={'Healthy Beauty'}
-                          text={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
+                          text={'Healthy Beaty - All for modern beauty & cosmetics shop sites'}/>
                     <Work iconId={''}
-                          src={ssn}
-                          title={'Social network'}
-                          text={'test wordk descriotion fjkshskjdfhskjdfh shshf'}/>
+                          src={diary}
+                          title={'The Diary'}
+                          text={' Personal Diary is an online diary app that lets you write your thoughts, secrets, and personal events in a safe and private way. With its unique and intuitive user interface, it is a perfect tool for anyone who wants to create a diary of their own. '}/>
                 </FlexWrapper>
             </Container>
         </StyledWorks>
