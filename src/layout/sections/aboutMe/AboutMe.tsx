@@ -19,7 +19,7 @@ const experiences: Array<Experience> = [
         workTime: 'Full Time',
         companyName: 'Cash Landing Co',
         location: 'Almaty',
-        workPeriod: '2023 Mart - Present'
+        workPeriod: '2023 June - Present'
     },
     {
         Title: 'Junior support Engineer',
