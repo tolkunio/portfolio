@@ -17,8 +17,8 @@ const experiences: Array<Experience> = [
     {
         Title: 'Frontend developer',
         workTime: 'Full Time',
-        companyName: 'Team Challenge Co',
-        location: 'remote',
+        companyName: 'Cash Landing Co',
+        location: 'Almaty',
         workPeriod: '2023 June - Present'
     },
     {
